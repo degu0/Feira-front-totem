@@ -1,9 +1,156 @@
 {
-    "posts": [
-      { "id": 1, "title": "Hello World", "author": "Deyvid" }
-    ],
-    "comments": [
-      { "id": 1, "body": "Legal!", "postId": 1 }
-    ]
-  }
-  
+  "lojas": [
+    {
+      "id": "1",
+      "nome": "Loja A",
+      "nomeProprietario": "Carlos Silva",
+      "categoria": [
+        "Moda",
+        "Calcados"
+      ],
+      "setor": "Moda",
+      "endereco": "Rua 1, 123, Centro",
+      "horarioAberto": "09:00 - 18:00",
+      "aberto": true
+    },
+    {
+      "id": "2",
+      "nome": "Loja B",
+      "nomeProprietario": "Ana Souza",
+      "categoria": [
+        "Eletronicos",
+        "Informatica"
+      ],
+      "setor": "Informatica",
+      "endereco": "Avenida Brasil, 456, Bairro X",
+      "horarioAberto": "10:00 - 20:00",
+      "aberto": true
+    },
+    {
+      "id": "3",
+      "nome": "Loja C",
+      "nomeProprietario": "Joao Pereira",
+      "categoria": [
+        "Moda"
+      ],
+      "setor": "Moda",
+      "endereco": "Praca Central, 789, Jardim",
+      "horarioAberto": "08:00 - 17:00",
+      "aberto": false
+    },
+    {
+      "id": "4",
+      "nome": "Loja D",
+      "nomeProprietario": "Mariana Costa",
+      "categoria": [
+        "Alimentos",
+        "Bebidas"
+      ],
+      "setor": "Alimentos",
+      "endereco": "Rua das Flores, 1011, Parque",
+      "horarioAberto": "07:00 - 22:00",
+      "aberto": true
+    },
+    {
+      "id": "5",
+      "nome": "Loja E",
+      "nomeProprietario": "Ricardo Oliveira",
+      "categoria": [
+        "Saude",
+        "Cosmeticos"
+      ],
+      "setor": "Cosmeticos",
+      "endereco": "Avenida Sao Joao, 1234, Zona Norte",
+      "horarioAberto": "09:00 - 19:00",
+      "aberto": true
+    },
+    {
+      "id": "6",
+      "nome": "Loja F",
+      "nomeProprietario": "Fernanda Lima",
+      "categoria": [
+        "Moda"
+      ],
+      "setor": "Moda",
+      "endereco": "Rua do Sol, 2020, Vila Nova",
+      "horarioAberto": "10:00 - 18:00",
+      "aberto": false
+    },
+    {
+      "id": "7",
+      "nome": "Loja G",
+      "nomeProprietario": "Felipe Martins",
+      "categoria": [
+        "Automoveis",
+        "Pecas"
+      ],
+      "setor": "Automoveis",
+      "endereco": "Avenida Carro, 3000, Bairro Verde",
+      "horarioAberto": "08:30 - 17:30",
+      "aberto": true
+    },
+    {
+      "id": "8",
+      "nome": "Loja H",
+      "nomeProprietario": "Juliana Almeida",
+      "categoria": [
+        "Calcados"
+      ],
+      "setor": "Moda",
+      "endereco": "Rua das Pedras, 4040, Centro Comercial",
+      "horarioAberto": "10:00 - 20:00",
+      "aberto": true
+    },
+    {
+      "id": "9",
+      "nome": "Loja I",
+      "nomeProprietario": "Roberto Santos",
+      "categoria": [
+        "Informatica"
+      ],
+      "setor": "Informatica",
+      "endereco": "Rua Digital, 5050, Sao Paulo",
+      "horarioAberto": "09:00 - 17:00",
+      "aberto": false
+    },
+    {
+      "id": "10",
+      "nome": "Loja J",
+      "nomeProprietario": "Patricia Gomes",
+      "categoria": [
+        "Moda",
+        "Acessorios"
+      ],
+      "setor": "Moda",
+      "endereco": "Rua das Laranjeiras, 6060, Rio de Janeiro",
+      "horarioAberto": "10:00 - 18:00",
+      "aberto": true
+    }
+  ],
+  "pessoal": [
+    {
+      "id": "663672",
+      "tipoPublico": "Local",
+      "genero": "Masculino",
+      "faixaEtaria": "0-12"
+    },
+    {
+      "id": "480996",
+      "tipoPublico": "Local",
+      "genero": "Masculino",
+      "faixaEtaria": "0-12"
+    },
+    {
+      "id": "243769",
+      "tipoPublico": "Turista",
+      "genero": "Masculino",
+      "faixaEtaria": "0-12"
+    },
+    {
+      "id": "477873",
+      "tipoPublico": "Local",
+      "genero": "Feminino",
+      "faixaEtaria": "13-17"
+    }
+  ]
+}

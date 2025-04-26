@@ -5,7 +5,7 @@ type CustomSelectProps = {
   title: string;
   values: string[];
   name?: string;
-  onChange?: (selected: string[] | string) => void; // permite capturar externamente também
+  onChange?: (selected: string[] | string) => void; 
 };
 
 export const CustomSelect: React.FC<CustomSelectProps> = ({
@@ -34,9 +34,9 @@ export const CustomSelect: React.FC<CustomSelectProps> = ({
   };
 
   return (
-    <div className="w-full">
-      <h2 className="ml-3 mb-2 text-lg font-semibold">{title}</h2>
-      <div className="flex gap-2 justify-evenly flex-wrap">
+    <div className="w-full my-1">
+      <h2 className="ml-2 mb-1 text-base font-semibold">{title}</h2>
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 px-2 mt-auto">
         {values.map((value, index) => {
           const id = `option-${value}`;
           const isChecked =
@@ -45,7 +45,7 @@ export const CustomSelect: React.FC<CustomSelectProps> = ({
               : selected === value;
 
           return (
-            <div key={index}>
+            <div key={index} className="flex justify-center">
               <input
                 type={type}
                 id={id}
@@ -57,9 +57,9 @@ export const CustomSelect: React.FC<CustomSelectProps> = ({
               />
               <label
                 htmlFor={id}
-                className="inline-flex items-center justify-center px-3 py-2 text-sm
-                text-black bg-indigo-200 rounded cursor-pointer border-none
-                peer-checked:bg-indigo-600 peer-checked:text-white"
+                className="inline-flex items-center justify-center px-2 py-1.5 text-sm
+                text-black bg-indigo-200 rounded cursor-pointer
+                peer-checked:bg-indigo-600 peer-checked:text-white transition-colors"
               >
                 {value}
               </label>
