@@ -1,54 +1,49 @@
-# React + TypeScript + Vite
+Instruções para Rodar o Projeto
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. Instale o Node.js
+Baixe e instale o Node.js no seu computador:
+https://nodejs.org/
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+2. Verifique se o Node foi instalado corretamente
+Abra o terminal (CMD, PowerShell ou Terminal do VS Code) e digite:
 
-## Expanding the ESLint configuration
+node --version
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Se aparecer a versão do Node, continue.
+Se não aparecer, tente reinstalar o Node.js.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+3. Clone o repositório
+No terminal, digite:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+git clone url-do-repositorio
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+(Substitua url-do-repositorio pela URL real do seu repositório.)
+
+
+4. Abra o projeto no VS Code
+Abra a pasta clonada no VS Code.
+Depois, abra o terminal integrado (Ctrl + `) e digite:
+
+npm install
+
+ou
+
+npm i
+
+
+5. Instale o JSON Server
+Ainda no terminal, digite:
+
+npm i json-server
+
+
+6. Inicie o projeto
+Em um terminal, execute:
+
+npm run dev
+
+Abra um novo terminal e rode o servidor JSON:
+
+json-server --watch DB.json --port 3000
