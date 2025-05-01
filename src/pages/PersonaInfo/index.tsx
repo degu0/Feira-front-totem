@@ -41,26 +41,27 @@ export function PersonalInfo() {
     };
 
     try {
-      const response = await fetch("http://localhost:3000/pessoal", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(payload),
-      });
-      if (response.ok) {
-        navigate("/Search");
-      } else {
-        console.error("Erro", "Houve um problema ao cadastrar os dados.");
-      }
+      // const response = await fetch("http://localhost:3000/pessoal", {
+      //   method: "POST",
+      //   headers: {
+      //     "Content-Type": "application/json",
+      //   },
+      //   body: JSON.stringify(payload),
+      // });
+      // if (response.ok) {
+
+      // } else {
+      //   console.error("Erro", "Houve um problema ao cadastrar os dados.");
+      // }
+      navigate("/Search");
     } catch (error) {
       console.error("Erro ao enviar dados:", error);
     }
   };
 
   return (
-    <div className="w-screen h-screen flex items-start justify-center bg-gradient-to-t from-indigo-950 to-indigo-400">
-      <div className="m-5 bg-white rounded h-[90%] w-[90%] flex flex-col items-center shadow-xl">
+    <div className="w-screen h-screen flex items-start justify-center bg-white">
+      <div className="h-[90%] w-[90%] flex flex-col items-center">
         <img src={logo} alt="Logo" className="w-20" />
         <div>
           <p className="text-xl font-bold text-indigo-600">Seja Bem Vindo! O que você deseja?</p>
