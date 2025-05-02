@@ -936,6 +936,24 @@
       "criacao": "2025-05-02T17:50:24.042Z",
       "atualizacao": "2025-05-02T17:50:24.042Z",
       "ativo": true
+    },
+    {
+      "id": "513438",
+      "tipo_usuario": "Local",
+      "faixaEtaria": "13-17",
+      "genero": "Masculino",
+      "criacao": "2025-05-02T18:10:21.266Z",
+      "atualizacao": "2025-05-02T18:10:21.266Z",
+      "ativo": true
+    },
+    {
+      "id": "307368",
+      "tipo_usuario": "Local",
+      "faixaEtaria": "0-12",
+      "genero": "Masculino",
+      "criacao": "2025-05-02T18:31:12.024Z",
+      "atualizacao": "2025-05-02T18:31:12.024Z",
+      "ativo": true
     }
   ]
 }

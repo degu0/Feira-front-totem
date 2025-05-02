@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "../../components/Button";
+import { useUserTracking } from "../../hooks/useUserTracking";
 
 type Categoria = {
   id: string;
@@ -38,6 +39,7 @@ export function Search() {
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setInputValue(event.target.value);
   };
+  useUserTracking();
 
   return (
     <div className="w-full min-h-screen flex flex-col items-center overflow-hidden">

@@ -3,6 +3,7 @@ import { CustomSelect } from "../../components/CustomSelect";
 import logo from "../../../public/logo.png";
 import { Button } from "../../components/Button";
 import { useNavigate } from "react-router-dom";
+import { useUserTracking } from "../../hooks/useUserTracking";
 
 export function PersonalInfo() {
   const navigate = useNavigate();
@@ -32,7 +33,6 @@ export function PersonalInfo() {
       alert("Por favor, preencha todas as opções.");
       return;
     }
-    
 
     const payload = {
       id: Math.floor(Math.random() * 1000000).toString(),
@@ -41,8 +41,7 @@ export function PersonalInfo() {
       genero,
       criacao: new Date().toISOString(),
       atualizacao: new Date().toISOString(),
-      ativo: true
-
+      ativo: true,
     };
 
     try {
@@ -63,12 +62,16 @@ export function PersonalInfo() {
     }
   };
 
+  useUserTracking();
+
   return (
     <div className="w-screen h-screen flex items-start justify-center bg-white">
       <div className="h-[90%] w-[90%] flex flex-col items-center">
         <img src={logo} alt="Logo" className="w-20" />
         <div>
-          <p className="text-xl font-bold text-indigo-600">Seja Bem Vindo! O que você deseja?</p>
+          <p className="text-xl font-bold text-indigo-600">
+            Seja Bem Vindo! O que você deseja?
+          </p>
         </div>
         <div className="w-full h-[60%] flex flex-col justify-center items-center gap-12">
           <CustomSelect
@@ -78,7 +81,10 @@ export function PersonalInfo() {
             name="typeOfPublic"
             onChange={(value) => {
               if (typeof value === "string") {
-                setSelectValueRadio((prev) => ({ ...prev, tipo_usuario: value }));
+                setSelectValueRadio((prev) => ({
+                  ...prev,
+                  tipo_usuario: value,
+                }));
               }
             }}
           />
@@ -100,7 +106,10 @@ export function PersonalInfo() {
             name="ageRanges"
             onChange={(value) => {
               if (typeof value === "string") {
-                setSelectValueRadio((prev) => ({ ...prev, faixaEtaria: value }));
+                setSelectValueRadio((prev) => ({
+                  ...prev,
+                  faixaEtaria: value,
+                }));
               }
             }}
           />
