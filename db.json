@@ -1,35 +1,35 @@
 {
   "categoria": [
     {
-      "id": 1,
+      "id": "1",
       "nome": "Moda Masculina",
       "criacao": "2025-04-28T14:29:54.459198Z",
       "atualizacao": "2025-04-28T14:29:54.459219Z",
       "ativo": true
     },
     {
-      "id": 2,
+      "id": "2",
       "nome": "Moda Feminina",
       "criacao": "2025-04-28T14:30:00.000000Z",
       "atualizacao": "2025-04-28T14:30:00.000000Z",
       "ativo": true
     },
     {
-      "id": 3,
+      "id": "3",
       "nome": "Artesanato",
       "criacao": "2025-04-28T14:30:10.000000Z",
       "atualizacao": "2025-04-28T14:30:10.000000Z",
       "ativo": true
     },
     {
-      "id": 4,
+      "id": "4",
       "nome": "Alimentação",
       "criacao": "2025-04-28T14:30:20.000000Z",
       "atualizacao": "2025-04-28T14:30:20.000000Z",
       "ativo": true
     },
     {
-      "id": 5,
+      "id": "5",
       "nome": "Eletrônicos",
       "criacao": "2025-04-28T14:30:30.000000Z",
       "atualizacao": "2025-04-28T14:30:30.000000Z",
@@ -38,7 +38,7 @@
   ],
   "produtos": [
     {
-      "id": 1,
+      "id": "1",
       "nome": "Camisa Social",
       "descricao": "camisa social branca de algodão",
       "imagem": null,
@@ -51,7 +51,7 @@
       "ativo": true
     },
     {
-      "id": 2,
+      "id": "2",
       "nome": "Vestido Floral",
       "descricao": "vestido leve com estampa floral",
       "imagem": null,
@@ -64,7 +64,7 @@
       "ativo": true
     },
     {
-      "id": 3,
+      "id": "3",
       "nome": "Pulseira de Miçangas",
       "descricao": "pulseira artesanal colorida",
       "imagem": null,
@@ -77,7 +77,7 @@
       "ativo": true
     },
     {
-      "id": 4,
+      "id": "4",
       "nome": "Bolo de Cenoura",
       "descricao": "bolo caseiro com cobertura de chocolate",
       "imagem": null,
@@ -90,7 +90,7 @@
       "ativo": true
     },
     {
-      "id": 5,
+      "id": "5",
       "nome": "Fone Bluetooth",
       "descricao": "fone sem fio com cancelamento de ruído",
       "imagem": null,
@@ -103,7 +103,7 @@
       "ativo": true
     },
     {
-      "id": 6,
+      "id": "6",
       "nome": "Bermuda Jeans",
       "descricao": "bermuda masculina azul escuro",
       "imagem": null,
@@ -116,7 +116,7 @@
       "ativo": true
     },
     {
-      "id": 7,
+      "id": "7",
       "nome": "Saia Plissada",
       "descricao": "saia feminina elegante",
       "imagem": null,
@@ -129,7 +129,7 @@
       "ativo": true
     },
     {
-      "id": 8,
+      "id": "8",
       "nome": "Quadro em Madeira",
       "descricao": "arte artesanal em moldura rústica",
       "imagem": null,
@@ -142,7 +142,7 @@
       "ativo": true
     },
     {
-      "id": 9,
+      "id": "9",
       "nome": "Pão de Queijo",
       "descricao": "delicioso pão de queijo artesanal",
       "imagem": null,
@@ -155,7 +155,7 @@
       "ativo": true
     },
     {
-      "id": 10,
+      "id": "10",
       "nome": "Carregador Portátil",
       "descricao": "power bank com 10000mAh",
       "imagem": null,
@@ -168,7 +168,7 @@
       "ativo": true
     },
     {
-      "id": 11,
+      "id": "11",
       "nome": "Calça Chino",
       "descricao": "calça casual para uso diário",
       "imagem": null,
@@ -181,7 +181,7 @@
       "ativo": true
     },
     {
-      "id": 12,
+      "id": "12",
       "nome": "Blusa de Lã",
       "descricao": "blusa feminina para inverno",
       "imagem": null,
@@ -194,7 +194,7 @@
       "ativo": true
     },
     {
-      "id": 13,
+      "id": "13",
       "nome": "Colar de Sementes",
       "descricao": "colar artesanal feito à mão",
       "imagem": null,
@@ -207,7 +207,7 @@
       "ativo": true
     },
     {
-      "id": 14,
+      "id": "14",
       "nome": "Coxinha",
       "descricao": "coxinha de frango com catupiry",
       "imagem": null,
@@ -220,7 +220,7 @@
       "ativo": true
     },
     {
-      "id": 15,
+      "id": "15",
       "nome": "Smartwatch",
       "descricao": "relógio inteligente com monitor cardíaco",
       "imagem": null,
@@ -233,7 +233,7 @@
       "ativo": true
     },
     {
-      "id": 16,
+      "id": "16",
       "nome": "Gravata Slim",
       "descricao": "gravata para eventos sociais",
       "imagem": null,
@@ -246,7 +246,7 @@
       "ativo": true
     },
     {
-      "id": 17,
+      "id": "17",
       "nome": "Macacão Jeans",
       "descricao": "roupa prática e estilosa",
       "imagem": null,
@@ -259,7 +259,7 @@
       "ativo": true
     },
     {
-      "id": 18,
+      "id": "18",
       "nome": "Porta-Copos Artesanal",
       "descricao": "feito de palha trançada",
       "imagem": null,
@@ -272,7 +272,7 @@
       "ativo": true
     },
     {
-      "id": 19,
+      "id": "19",
       "nome": "Pastel de Carne",
       "descricao": "pastel frito com recheio caseiro",
       "imagem": null,
@@ -285,7 +285,7 @@
       "ativo": true
     },
     {
-      "id": 20,
+      "id": "20",
       "nome": "Mouse Gamer",
       "descricao": "mouse com iluminação RGB",
       "imagem": null,
@@ -300,7 +300,7 @@
   ],
   "lojistas": [
     {
-      "id": 1,
+      "id": "1",
       "nome": "Marcelo",
       "email": "marcelo@gmail.com",
       "telefone": "81994685115",
@@ -311,7 +311,7 @@
       "ativo": true
     },
     {
-      "id": 2,
+      "id": "2",
       "nome": "Ana Paula",
       "email": "ana.paula@gmail.com",
       "telefone": "81992345678",
@@ -322,7 +322,7 @@
       "ativo": true
     },
     {
-      "id": 3,
+      "id": "3",
       "nome": "José Carlos",
       "email": "jose.carlos@hotmail.com",
       "telefone": "81991234567",
@@ -333,7 +333,7 @@
       "ativo": true
     },
     {
-      "id": 4,
+      "id": "4",
       "nome": "Fernanda Lima",
       "email": "fernanda.lima@outlook.com",
       "telefone": "81998887766",
@@ -344,7 +344,7 @@
       "ativo": true
     },
     {
-      "id": 5,
+      "id": "5",
       "nome": "Ricardo Alves",
       "email": "ricardo.alves@gmail.com",
       "telefone": "81993456789",
@@ -355,7 +355,7 @@
       "ativo": true
     },
     {
-      "id": 6,
+      "id": "6",
       "nome": "Patrícia Gomes",
       "email": "patricia.gomes@yahoo.com",
       "telefone": "81997654321",
@@ -366,7 +366,7 @@
       "ativo": true
     },
     {
-      "id": 7,
+      "id": "7",
       "nome": "Carlos Henrique",
       "email": "carlos.henrique@gmail.com",
       "telefone": "81990011223",
@@ -377,7 +377,7 @@
       "ativo": true
     },
     {
-      "id": 8,
+      "id": "8",
       "nome": "Luciana Rocha",
       "email": "luciana.rocha@hotmail.com",
       "telefone": "81998765432",
@@ -388,7 +388,7 @@
       "ativo": true
     },
     {
-      "id": 9,
+      "id": "9",
       "nome": "André Souza",
       "email": "andre.souza@gmail.com",
       "telefone": "81991239876",
@@ -399,7 +399,7 @@
       "ativo": true
     },
     {
-      "id": 10,
+      "id": "10",
       "nome": "Juliana Mendes",
       "email": "juliana.mendes@gmail.com",
       "telefone": "81995678901",
@@ -410,7 +410,7 @@
       "ativo": true
     },
     {
-      "id": 11,
+      "id": "11",
       "nome": "Bruno Ferreira",
       "email": "bruno.ferreira@uol.com",
       "telefone": "81991112233",
@@ -421,7 +421,7 @@
       "ativo": true
     },
     {
-      "id": 12,
+      "id": "12",
       "nome": "Renata Vieira",
       "email": "renata.vieira@gmail.com",
       "telefone": "81992345670",
@@ -432,7 +432,7 @@
       "ativo": true
     },
     {
-      "id": 13,
+      "id": "13",
       "nome": "Eduardo Lima",
       "email": "eduardo.lima@gmail.com",
       "telefone": "81994433221",
@@ -443,7 +443,7 @@
       "ativo": true
     },
     {
-      "id": 14,
+      "id": "14",
       "nome": "Tatiane Borges",
       "email": "tatiane.borges@gmail.com",
       "telefone": "81990001122",
@@ -454,7 +454,7 @@
       "ativo": true
     },
     {
-      "id": 15,
+      "id": "15",
       "nome": "João Pedro",
       "email": "joao.pedro@gmail.com",
       "telefone": "81991122334",
@@ -467,7 +467,7 @@
   ],
   "lojas": [
     {
-      "id": 1,
+      "id": "1",
       "nome": "Hugo Boss",
       "banner": null,
       "logo": null,
@@ -490,7 +490,7 @@
       "ativo": true
     },
     {
-      "id": 2,
+      "id": "2",
       "nome": "Adidas Store",
       "banner": null,
       "logo": null,
@@ -513,7 +513,7 @@
       "ativo": true
     },
     {
-      "id": 3,
+      "id": "3",
       "nome": "Nike Outlet",
       "banner": null,
       "logo": null,
@@ -536,7 +536,7 @@
       "ativo": true
     },
     {
-      "id": 4,
+      "id": "4",
       "nome": "Zara",
       "banner": null,
       "logo": null,
@@ -559,7 +559,7 @@
       "ativo": true
     },
     {
-      "id": 5,
+      "id": "5",
       "nome": "Forever 21",
       "banner": null,
       "logo": null,
@@ -582,7 +582,7 @@
       "ativo": true
     },
     {
-      "id": 6,
+      "id": "6",
       "nome": "C&A",
       "banner": null,
       "logo": null,
@@ -605,7 +605,7 @@
       "ativo": true
     },
     {
-      "id": 7,
+      "id": "7",
       "nome": "Lacoste",
       "banner": null,
       "logo": null,
@@ -628,7 +628,7 @@
       "ativo": true
     },
     {
-      "id": 8,
+      "id": "8",
       "nome": "H&M",
       "banner": null,
       "logo": null,
@@ -651,7 +651,7 @@
       "ativo": true
     },
     {
-      "id": 9,
+      "id": "9",
       "nome": "Osklen",
       "banner": null,
       "logo": null,
@@ -674,7 +674,7 @@
       "ativo": true
     },
     {
-      "id": 10,
+      "id": "10",
       "nome": "Riachuelo",
       "banner": null,
       "logo": null,
@@ -697,7 +697,7 @@
       "ativo": true
     },
     {
-      "id": 11,
+      "id": "11",
       "nome": "Renner",
       "banner": null,
       "logo": null,
@@ -720,7 +720,7 @@
       "ativo": true
     },
     {
-      "id": 12,
+      "id": "12",
       "nome": "Salinas",
       "banner": null,
       "logo": null,
@@ -743,7 +743,7 @@
       "ativo": true
     },
     {
-      "id": 13,
+      "id": "13",
       "nome": "O Boticário",
       "banner": null,
       "logo": null,
@@ -766,7 +766,7 @@
       "ativo": true
     },
     {
-      "id": 14,
+      "id": "14",
       "nome": "L'Occitane",
       "banner": null,
       "logo": null,
@@ -789,7 +789,7 @@
       "ativo": true
     },
     {
-      "id": 15,
+      "id": "15",
       "nome": "Avon",
       "banner": null,
       "logo": null,
@@ -812,7 +812,7 @@
       "ativo": true
     },
     {
-      "id": 16,
+      "id": "16",
       "nome": "Boticário",
       "banner": null,
       "logo": null,
@@ -835,7 +835,7 @@
       "ativo": true
     },
     {
-      "id": 17,
+      "id": "17",
       "nome": "Drogaria São Paulo",
       "banner": null,
       "logo": null,
@@ -858,7 +858,7 @@
       "ativo": true
     },
     {
-      "id": 18,
+      "id": "18",
       "nome": "Droga Raia",
       "banner": null,
       "logo": null,
@@ -881,7 +881,7 @@
       "ativo": true
     },
     {
-      "id": 19,
+      "id": "19",
       "nome": "Farmácia Pague Menos",
       "banner": null,
       "logo": null,
@@ -904,7 +904,7 @@
       "ativo": true
     },
     {
-      "id": 20,
+      "id": "20",
       "nome": "Panvel",
       "banner": null,
       "logo": null,
@@ -953,6 +953,60 @@
       "genero": "Masculino",
       "criacao": "2025-05-02T18:31:12.024Z",
       "atualizacao": "2025-05-02T18:31:12.024Z",
+      "ativo": true
+    },
+    {
+      "id": "710250",
+      "tipo_usuario": "Local",
+      "faixaEtaria": "0-12",
+      "genero": "Masculino",
+      "criacao": "2025-05-02T18:45:24.575Z",
+      "atualizacao": "2025-05-02T18:45:24.575Z",
+      "ativo": true
+    },
+    {
+      "id": "658538",
+      "tipo_usuario": "Local",
+      "faixaEtaria": "0-12",
+      "genero": "Masculino",
+      "criacao": "2025-05-02T18:48:26.543Z",
+      "atualizacao": "2025-05-02T18:48:26.543Z",
+      "ativo": true
+    },
+    {
+      "id": "259955",
+      "tipo_usuario": "Turista",
+      "faixaEtaria": "13-17",
+      "genero": "Feminino",
+      "criacao": "2025-05-02T19:03:47.150Z",
+      "atualizacao": "2025-05-02T19:03:47.150Z",
+      "ativo": true
+    },
+    {
+      "id": "78553",
+      "tipo_usuario": "Local",
+      "faixaEtaria": "0-12",
+      "genero": "Masculino",
+      "criacao": "2025-05-02T19:06:55.949Z",
+      "atualizacao": "2025-05-02T19:06:55.949Z",
+      "ativo": true
+    },
+    {
+      "id": "681770",
+      "tipo_usuario": "Local",
+      "faixaEtaria": "0-12",
+      "genero": "Masculino",
+      "criacao": "2025-05-02T19:11:43.701Z",
+      "atualizacao": "2025-05-02T19:11:43.701Z",
+      "ativo": true
+    },
+    {
+      "id": "144500",
+      "tipo_usuario": "Local",
+      "faixaEtaria": "0-12",
+      "genero": "Masculino",
+      "criacao": "2025-05-02T19:16:13.861Z",
+      "atualizacao": "2025-05-02T19:16:13.861Z",
       "ativo": true
     }
   ]

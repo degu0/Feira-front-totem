@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Button } from "../../components/Button";
 import { useUserTracking } from "../../hooks/useUserTracking";
 
 type Categoria = {
@@ -15,11 +14,12 @@ type Loja = {
 
 export function Search() {
   const navigate = useNavigate();
-  const [inputValue, setInputValue] = useState<string>("");
+  const [query, setQuery] = useState<string>("");
 
   const [category, setCategory] = useState<Categoria[]>([]);
   const [selectedCategory, setSelectedCategory] = useState<string>("");
   const [stores, setStores] = useState<Loja[]>([]);
+  const [filteredStores, setFilteredStores] = useState<Loja[]>([]);
 
   useEffect(() => {
     fetch("http://localhost:3000/categoria")
@@ -29,16 +29,30 @@ export function Search() {
 
   const handleCategoryClick = (categoryId: string) => {
     setSelectedCategory(categoryId);
-    console.log(categoryId);
+    setQuery("")
 
     fetch(`http://localhost:3000/lojas?categoria=${categoryId}`)
       .then((res) => res.json())
-      .then((data) => setStores(data));
+      .then((data) => {
+        setStores(data);
+        setFilteredStores(data);
+      });
   };
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setInputValue(event.target.value);
+    const value = event.target.value;
+    setQuery(value);
+
+    if (value) {
+      const filtered = stores.filter((item) =>
+        item.nome.toLowerCase().includes(value.toLowerCase())
+      );
+      setFilteredStores(filtered);
+    } else {
+      setFilteredStores(stores);
+    }
   };
+
   useUserTracking();
 
   return (
@@ -68,29 +82,38 @@ export function Search() {
       </div>
 
       <div className="bg-white w-full p-8 shadow-xl flex flex-col items-center gap-8">
-        <input
-          type="text"
-          name="inputSearch"
-          placeholder="Pesquisa nome de loja"
-          value={inputValue}
-          onChange={handleInputChange}
-          className="border-2 border-black rounded text-black w-1/2 p-2"
-        />
+        <div className="w-full flex justify-center items-center">
+          <input
+            type="text"
+            placeholder="Pesquise o nome da loja"
+            value={query}
+            onChange={handleInputChange}
+            className="border-2 border-black rounded text-black w-1/2 p-1.5"
+          />
+        </div>
 
-        {stores.length > 0 && (
+        {selectedCategory ? (
           <div className="w-full max-w-xl mt-6">
             <h3 className="text-xl font-semibold mb-2">
               Lojas da categoria selecionada:
             </h3>
             <ul className="list-disc list-inside">
-              {stores.map((store) => (
-                <li key={store.id}>{store.nome}</li>
-              ))}
+              {filteredStores.length > 0 ? (
+                filteredStores.map((store) => (
+                  <li key={store.id}>{store.nome}</li>
+                ))
+              ) : (
+                <li className="text-gray-500">Nenhuma loja encontrada</li>
+              )}
             </ul>
           </div>
+        ) : (
+          <div className="w-full max-w-xl mt-6">
+            <h3 className="text-xl font-semibold mb-2">
+              Selecione uma categoria
+            </h3>
+          </div>
         )}
-
-        <Button label="Pesquisar" onClick={() => navigate(`/busca?setor=${category}`)} />
       </div>
     </div>
   );
