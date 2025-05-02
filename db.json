@@ -472,7 +472,11 @@
       "banner": null,
       "logo": null,
       "descricao": "Loja especializada em moda masculina",
-      "produtos": [1, 2, 3],
+      "produtos": [
+        1,
+        2,
+        3
+      ],
       "categoria": 1,
       "localizacao": "Rua 10 de maio, 293",
       "lojista": 1,
@@ -480,7 +484,7 @@
       "redes_sociais": "@hugoboss @hugobossoficial",
       "horario_funcionamento": "12:00-17:00",
       "avaliacoes": [],
-      "nota": 6.0,
+      "nota": 6,
       "criacao": "2025-04-28T14:36:44.212377Z",
       "atualizacao": "2025-04-30T14:32:39.458743Z",
       "ativo": true
@@ -491,7 +495,11 @@
       "banner": null,
       "logo": null,
       "descricao": "Loja especializada em roupas e acessórios esportivos",
-      "produtos": [4, 5, 6],
+      "produtos": [
+        4,
+        5,
+        6
+      ],
       "categoria": 2,
       "localizacao": "Av. Central, 45",
       "lojista": 2,
@@ -510,7 +518,11 @@
       "banner": null,
       "logo": null,
       "descricao": "Outlet de roupas e calçados Nike",
-      "produtos": [7, 8, 9],
+      "produtos": [
+        7,
+        8,
+        9
+      ],
       "categoria": 2,
       "localizacao": "Rua das Palmeiras, 118",
       "lojista": 3,
@@ -529,7 +541,11 @@
       "banner": null,
       "logo": null,
       "descricao": "Moda feminina e masculina de alta qualidade",
-      "produtos": [10, 11, 12],
+      "produtos": [
+        10,
+        11,
+        12
+      ],
       "categoria": 1,
       "localizacao": "Rua João Pessoa, 214",
       "lojista": 4,
@@ -548,7 +564,11 @@
       "banner": null,
       "logo": null,
       "descricao": "Moda jovem e trendy",
-      "produtos": [13, 14, 15],
+      "produtos": [
+        13,
+        14,
+        15
+      ],
       "categoria": 1,
       "localizacao": "Av. do Shopping, 122",
       "lojista": 5,
@@ -567,7 +587,11 @@
       "banner": null,
       "logo": null,
       "descricao": "Vestuário para todas as idades",
-      "produtos": [16, 17, 18],
+      "produtos": [
+        16,
+        17,
+        18
+      ],
       "categoria": 1,
       "localizacao": "Rua São Vicente, 187",
       "lojista": 6,
@@ -575,7 +599,7 @@
       "redes_sociais": "@cea @ceabrasil",
       "horario_funcionamento": "09:00-18:00",
       "avaliacoes": [],
-      "nota": 8.0,
+      "nota": 8,
       "criacao": "2025-04-28T14:44:40.212377Z",
       "atualizacao": "2025-04-30T14:34:30.458743Z",
       "ativo": true
@@ -586,7 +610,11 @@
       "banner": null,
       "logo": null,
       "descricao": "Moda casual e elegante",
-      "produtos": [19, 20, 21],
+      "produtos": [
+        19,
+        20,
+        21
+      ],
       "categoria": 1,
       "localizacao": "Rua das Flores, 399",
       "lojista": 7,
@@ -605,7 +633,11 @@
       "banner": null,
       "logo": null,
       "descricao": "Loja de moda jovem e sofisticada",
-      "produtos": [22, 23, 24],
+      "produtos": [
+        22,
+        23,
+        24
+      ],
       "categoria": 1,
       "localizacao": "Av. Central, 352",
       "lojista": 8,
@@ -624,7 +656,11 @@
       "banner": null,
       "logo": null,
       "descricao": "Estilo e sofisticação brasileira",
-      "produtos": [25, 26, 27],
+      "produtos": [
+        25,
+        26,
+        27
+      ],
       "categoria": 1,
       "localizacao": "Rua do Comércio, 113",
       "lojista": 9,
@@ -643,7 +679,11 @@
       "banner": null,
       "logo": null,
       "descricao": "Vestuário e acessórios de alta qualidade",
-      "produtos": [28, 29, 30],
+      "produtos": [
+        28,
+        29,
+        30
+      ],
       "categoria": 1,
       "localizacao": "Rua Dona Teresa, 156",
       "lojista": 10,
@@ -662,7 +702,11 @@
       "banner": null,
       "logo": null,
       "descricao": "Moda feminina e masculina acessível",
-      "produtos": [31, 32, 33],
+      "produtos": [
+        31,
+        32,
+        33
+      ],
       "categoria": 1,
       "localizacao": "Rua José do Patrocínio, 430",
       "lojista": 11,
@@ -681,7 +725,11 @@
       "banner": null,
       "logo": null,
       "descricao": "Moda praiana e casual",
-      "produtos": [34, 35, 36],
+      "produtos": [
+        34,
+        35,
+        36
+      ],
       "categoria": 1,
       "localizacao": "Av. das Américas, 330",
       "lojista": 12,
@@ -700,7 +748,11 @@
       "banner": null,
       "logo": null,
       "descricao": "Cosméticos e perfumaria",
-      "produtos": [37, 38, 39],
+      "produtos": [
+        37,
+        38,
+        39
+      ],
       "categoria": 3,
       "localizacao": "Rua da Paz, 75",
       "lojista": 13,
@@ -719,7 +771,11 @@
       "banner": null,
       "logo": null,
       "descricao": "Produtos de cuidados com a pele e corpo",
-      "produtos": [40, 41, 42],
+      "produtos": [
+        40,
+        41,
+        42
+      ],
       "categoria": 3,
       "localizacao": "Rua do Carmo, 56",
       "lojista": 14,
@@ -738,7 +794,11 @@
       "banner": null,
       "logo": null,
       "descricao": "Produtos de beleza e cuidados pessoais",
-      "produtos": [43, 44, 45],
+      "produtos": [
+        43,
+        44,
+        45
+      ],
       "categoria": 3,
       "localizacao": "Rua do Sol, 85",
       "lojista": 15,
@@ -757,7 +817,11 @@
       "banner": null,
       "logo": null,
       "descricao": "Produtos cosméticos, perfumes e maquiagens",
-      "produtos": [46, 47, 48],
+      "produtos": [
+        46,
+        47,
+        48
+      ],
       "categoria": 3,
       "localizacao": "Av. dos Anjos, 59",
       "lojista": 16,
@@ -776,7 +840,11 @@
       "banner": null,
       "logo": null,
       "descricao": "Medicamentos e produtos de saúde",
-      "produtos": [49, 50, 51],
+      "produtos": [
+        49,
+        50,
+        51
+      ],
       "categoria": 4,
       "localizacao": "Rua das Orquídeas, 128",
       "lojista": 17,
@@ -795,7 +863,11 @@
       "banner": null,
       "logo": null,
       "descricao": "Produtos farmacêuticos e de bem-estar",
-      "produtos": [52, 53, 54],
+      "produtos": [
+        52,
+        53,
+        54
+      ],
       "categoria": 4,
       "localizacao": "Rua da Alegria, 64",
       "lojista": 18,
@@ -803,7 +875,7 @@
       "redes_sociais": "@drogaraia @drogaraia_br",
       "horario_funcionamento": "10:00-19:00",
       "avaliacoes": [],
-      "nota": 7.0,
+      "nota": 7,
       "criacao": "2025-04-28T14:51:00.212377Z",
       "atualizacao": "2025-04-30T14:40:30.458743Z",
       "ativo": true
@@ -814,7 +886,11 @@
       "banner": null,
       "logo": null,
       "descricao": "Produtos para a saúde e beleza",
-      "produtos": [55, 56, 57],
+      "produtos": [
+        55,
+        56,
+        57
+      ],
       "categoria": 4,
       "localizacao": "Rua da Estação, 21",
       "lojista": 19,
@@ -833,7 +909,11 @@
       "banner": null,
       "logo": null,
       "descricao": "Produtos farmacêuticos e cosméticos",
-      "produtos": [58, 59, 60],
+      "produtos": [
+        58,
+        59,
+        60
+      ],
       "categoria": 4,
       "localizacao": "Rua da Liberdade, 101",
       "lojista": 20,
@@ -846,5 +926,16 @@
       "atualizacao": "2025-04-30T14:41:30.458743Z",
       "ativo": true
     }
-  ]      
+  ],
+  "totens-pessoais": [
+    {
+      "id": "201975",
+      "tipo_usuario": "Local",
+      "faixaEtaria": "0-12",
+      "genero": "Masculino",
+      "criacao": "2025-05-02T17:50:24.042Z",
+      "atualizacao": "2025-05-02T17:50:24.042Z",
+      "ativo": true
+    }
+  ]
 }

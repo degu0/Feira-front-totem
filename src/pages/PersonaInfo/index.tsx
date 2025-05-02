@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 export function PersonalInfo() {
   const navigate = useNavigate();
   const [selectedValueRadio, setSelectValueRadio] = useState({
-    tipoPublico: "",
+    tipo_usuario: "",
     genero: "",
     faixaEtaria: "",
   });
@@ -26,34 +26,38 @@ export function PersonalInfo() {
   const genders = ["Masculino", "Feminino", "Não Binário", "Prefere não dizer"];
 
   const handleCadastro = async () => {
-    const { tipoPublico, genero, faixaEtaria } = selectedValueRadio;
+    const { tipo_usuario, genero, faixaEtaria } = selectedValueRadio;
 
-    if (!tipoPublico || !genero || !faixaEtaria) {
+    if (!tipo_usuario || !genero || !faixaEtaria) {
       alert("Por favor, preencha todas as opções.");
       return;
     }
+    
 
     const payload = {
       id: Math.floor(Math.random() * 1000000).toString(),
-      tipoPublico,
-      genero,
+      tipo_usuario,
       faixaEtaria,
+      genero,
+      criacao: new Date().toISOString(),
+      atualizacao: new Date().toISOString(),
+      ativo: true
+
     };
 
     try {
-      // const response = await fetch("http://localhost:3000/pessoal", {
-      //   method: "POST",
-      //   headers: {
-      //     "Content-Type": "application/json",
-      //   },
-      //   body: JSON.stringify(payload),
-      // });
-      // if (response.ok) {
-
-      // } else {
-      //   console.error("Erro", "Houve um problema ao cadastrar os dados.");
-      // }
-      navigate("/Search");
+      const response = await fetch("http://localhost:3000/totens-pessoais", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+      if (response.ok) {
+        navigate("/Search");
+      } else {
+        console.error("Erro", "Houve um problema ao cadastrar os dados.");
+      }
     } catch (error) {
       console.error("Erro ao enviar dados:", error);
     }
@@ -74,7 +78,7 @@ export function PersonalInfo() {
             name="typeOfPublic"
             onChange={(value) => {
               if (typeof value === "string") {
-                setSelectValueRadio((prev) => ({ ...prev, tipoPublico: value }));
+                setSelectValueRadio((prev) => ({ ...prev, tipo_usuario: value }));
               }
             }}
           />
