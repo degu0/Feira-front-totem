@@ -2,37 +2,114 @@
   "categoria": [
     {
       "id": "1",
-      "nome": "Moda Masculina",
+      "nome": "Moda Íntima",
       "criacao": "2025-04-28T14:29:54.459198Z",
       "atualizacao": "2025-04-28T14:29:54.459219Z",
       "ativo": true
     },
     {
       "id": "2",
-      "nome": "Moda Feminina",
-      "criacao": "2025-04-28T14:30:00.000000Z",
-      "atualizacao": "2025-04-28T14:30:00.000000Z",
+      "nome": "Moda Praia",
+      "criacao": "2025-04-28T14:29:54.459198Z",
+      "atualizacao": "2025-04-28T14:29:54.459219Z",
       "ativo": true
     },
     {
       "id": "3",
-      "nome": "Artesanato",
-      "criacao": "2025-04-28T14:30:10.000000Z",
-      "atualizacao": "2025-04-28T14:30:10.000000Z",
+      "nome": "Moda Fitness",
+      "criacao": "2025-04-28T14:29:54.459198Z",
+      "atualizacao": "2025-04-28T14:29:54.459219Z",
       "ativo": true
     },
     {
       "id": "4",
-      "nome": "Alimentação",
-      "criacao": "2025-04-28T14:30:20.000000Z",
-      "atualizacao": "2025-04-28T14:30:20.000000Z",
+      "nome": "Plus Size",
+      "criacao": "2025-04-28T14:29:54.459198Z",
+      "atualizacao": "2025-04-28T14:29:54.459219Z",
       "ativo": true
     },
     {
       "id": "5",
-      "nome": "Eletrônicos",
-      "criacao": "2025-04-28T14:30:30.000000Z",
-      "atualizacao": "2025-04-28T14:30:30.000000Z",
+      "nome": "Bebês",
+      "criacao": "2025-04-28T14:29:54.459198Z",
+      "atualizacao": "2025-04-28T14:29:54.459219Z",
+      "ativo": true
+    },
+    {
+      "id": "6",
+      "nome": "Moda Infantil",
+      "criacao": "2025-04-28T14:29:54.459198Z",
+      "atualizacao": "2025-04-28T14:29:54.459219Z",
+      "ativo": true
+    },
+    {
+      "id": "7",
+      "nome": "Moda Feminina",
+      "criacao": "2025-04-28T14:29:54.459198Z",
+      "atualizacao": "2025-04-28T14:29:54.459219Z",
+      "ativo": true
+    },
+    {
+      "id": "8",
+      "nome": "Moda Esportiva",
+      "criacao": "2025-04-28T14:29:54.459198Z",
+      "atualizacao": "2025-04-28T14:29:54.459219Z",
+      "ativo": true
+    },
+    {
+      "id": "9",
+      "nome": "Moda Masculina",
+      "criacao": "2025-04-28T14:29:54.459198Z",
+      "atualizacao": "2025-04-28T14:29:54.459219Z",
+      "ativo": true
+    },
+    {
+      "id": "10",
+      "nome": "Importados",
+      "criacao": "2025-04-28T14:29:54.459198Z",
+      "atualizacao": "2025-04-28T14:29:54.459219Z",
+      "ativo": true
+    },
+    {
+      "id": "11",
+      "nome": "Artesanato",
+      "criacao": "2025-04-28T14:29:54.459198Z",
+      "atualizacao": "2025-04-28T14:29:54.459219Z",
+      "ativo": true
+    },
+    {
+      "id": "12",
+      "nome": "Brinquedos",
+      "criacao": "2025-04-28T14:29:54.459198Z",
+      "atualizacao": "2025-04-28T14:29:54.459219Z",
+      "ativo": true
+    },
+    {
+      "id": "13",
+      "nome": "Acessórios",
+      "criacao": "2025-04-28T14:29:54.459198Z",
+      "atualizacao": "2025-04-28T14:29:54.459219Z",
+      "ativo": true
+    },
+    {
+      "id": "14",
+      "nome": "Calçados",
+      "criacao": "2025-04-28T14:29:54.459198Z",
+      "atualizacao": "2025-04-28T14:29:54.459219Z",
+      "ativo": true
+    },
+    {
+      "id": "15",
+      "nome": "Utilidades",
+      "criacao": "2025-04-28T14:29:54.459198Z",
+      "atualizacao": "2025-04-28T14:29:54.459219Z",
+      "ativo": true
+    },
+    {
+      "id": "16",
+      "nome": "Cama, Mesa e Banho",
+      "criacao": "2025-04-28T14:29:54.459198Z",
+      "atualizacao": "2025-04-28T14:29:54.459219Z",
       "ativo": true
     }
   ],
@@ -475,9 +552,11 @@
       "produtos": [
         1,
         2,
-        3
+        3,
+        4,
+        5
       ],
-      "categoria": 1,
+      "categoria": 9,
       "localizacao": "Rua 10 de maio, 293",
       "lojista": 1,
       "foto_da_loja": null,
@@ -487,7 +566,8 @@
       "nota": 6,
       "criacao": "2025-04-28T14:36:44.212377Z",
       "atualizacao": "2025-04-30T14:32:39.458743Z",
-      "ativo": true
+      "ativo": true,
+      "cor": "vermelho"
     },
     {
       "id": "2",
@@ -496,11 +576,13 @@
       "logo": null,
       "descricao": "Loja especializada em roupas e acessórios esportivos",
       "produtos": [
-        4,
-        5,
-        6
+        6,
+        7,
+        8,
+        9,
+        10
       ],
-      "categoria": 2,
+      "categoria": 8,
       "localizacao": "Av. Central, 45",
       "lojista": 2,
       "foto_da_loja": null,
@@ -510,7 +592,8 @@
       "nota": 7.2,
       "criacao": "2025-04-28T14:40:00.212377Z",
       "atualizacao": "2025-04-30T14:32:39.458743Z",
-      "ativo": true
+      "ativo": true,
+      "cor": "azul"
     },
     {
       "id": "3",
@@ -519,11 +602,13 @@
       "logo": null,
       "descricao": "Outlet de roupas e calçados Nike",
       "produtos": [
-        7,
-        8,
-        9
+        11,
+        12,
+        13,
+        14,
+        15
       ],
-      "categoria": 2,
+      "categoria": 8,
       "localizacao": "Rua das Palmeiras, 118",
       "lojista": 3,
       "foto_da_loja": null,
@@ -533,7 +618,8 @@
       "nota": 8.5,
       "criacao": "2025-04-28T14:41:10.212377Z",
       "atualizacao": "2025-04-30T14:33:10.458743Z",
-      "ativo": true
+      "ativo": true,
+      "cor": "rosa"
     },
     {
       "id": "4",
@@ -542,11 +628,13 @@
       "logo": null,
       "descricao": "Moda feminina e masculina de alta qualidade",
       "produtos": [
-        10,
-        11,
-        12
+        16,
+        17,
+        18,
+        19,
+        20
       ],
-      "categoria": 1,
+      "categoria": 7,
       "localizacao": "Rua João Pessoa, 214",
       "lojista": 4,
       "foto_da_loja": null,
@@ -556,7 +644,8 @@
       "nota": 7.8,
       "criacao": "2025-04-28T14:42:20.212377Z",
       "atualizacao": "2025-04-30T14:33:30.458743Z",
-      "ativo": true
+      "ativo": true,
+      "cor": "amarelo"
     },
     {
       "id": "5",
@@ -565,11 +654,13 @@
       "logo": null,
       "descricao": "Moda jovem e trendy",
       "produtos": [
-        13,
-        14,
-        15
+        1,
+        3,
+        5,
+        7,
+        9
       ],
-      "categoria": 1,
+      "categoria": 7,
       "localizacao": "Av. do Shopping, 122",
       "lojista": 5,
       "foto_da_loja": null,
@@ -579,7 +670,8 @@
       "nota": 6.5,
       "criacao": "2025-04-28T14:43:30.212377Z",
       "atualizacao": "2025-04-30T14:34:00.458743Z",
-      "ativo": true
+      "ativo": true,
+      "cor": "roxo"
     },
     {
       "id": "6",
@@ -588,11 +680,13 @@
       "logo": null,
       "descricao": "Vestuário para todas as idades",
       "produtos": [
-        16,
-        17,
-        18
+        2,
+        4,
+        6,
+        8,
+        10
       ],
-      "categoria": 1,
+      "categoria": 7,
       "localizacao": "Rua São Vicente, 187",
       "lojista": 6,
       "foto_da_loja": null,
@@ -602,7 +696,8 @@
       "nota": 8,
       "criacao": "2025-04-28T14:44:40.212377Z",
       "atualizacao": "2025-04-30T14:34:30.458743Z",
-      "ativo": true
+      "ativo": true,
+      "cor": "vermelho"
     },
     {
       "id": "7",
@@ -611,11 +706,13 @@
       "logo": null,
       "descricao": "Moda casual e elegante",
       "produtos": [
-        19,
-        20,
-        21
+        11,
+        13,
+        15,
+        17,
+        19
       ],
-      "categoria": 1,
+      "categoria": 9,
       "localizacao": "Rua das Flores, 399",
       "lojista": 7,
       "foto_da_loja": null,
@@ -625,7 +722,8 @@
       "nota": 7.3,
       "criacao": "2025-04-28T14:45:50.212377Z",
       "atualizacao": "2025-04-30T14:35:00.458743Z",
-      "ativo": true
+      "ativo": true,
+      "cor": "azul"
     },
     {
       "id": "8",
@@ -634,11 +732,13 @@
       "logo": null,
       "descricao": "Loja de moda jovem e sofisticada",
       "produtos": [
-        22,
-        23,
-        24
+        12,
+        14,
+        16,
+        18,
+        20
       ],
-      "categoria": 1,
+      "categoria": 7,
       "localizacao": "Av. Central, 352",
       "lojista": 8,
       "foto_da_loja": null,
@@ -648,7 +748,8 @@
       "nota": 7.6,
       "criacao": "2025-04-28T14:46:00.212377Z",
       "atualizacao": "2025-04-30T14:35:30.458743Z",
-      "ativo": true
+      "ativo": true,
+      "cor": "rosa"
     },
     {
       "id": "9",
@@ -657,11 +758,13 @@
       "logo": null,
       "descricao": "Estilo e sofisticação brasileira",
       "produtos": [
-        25,
-        26,
-        27
+        1,
+        5,
+        9,
+        13,
+        17
       ],
-      "categoria": 1,
+      "categoria": 9,
       "localizacao": "Rua do Comércio, 113",
       "lojista": 9,
       "foto_da_loja": null,
@@ -671,7 +774,8 @@
       "nota": 8.1,
       "criacao": "2025-04-28T14:46:30.212377Z",
       "atualizacao": "2025-04-30T14:36:00.458743Z",
-      "ativo": true
+      "ativo": true,
+      "cor": "amarelo"
     },
     {
       "id": "10",
@@ -680,11 +784,13 @@
       "logo": null,
       "descricao": "Vestuário e acessórios de alta qualidade",
       "produtos": [
-        28,
-        29,
-        30
+        2,
+        6,
+        10,
+        14,
+        18
       ],
-      "categoria": 1,
+      "categoria": 7,
       "localizacao": "Rua Dona Teresa, 156",
       "lojista": 10,
       "foto_da_loja": null,
@@ -694,319 +800,135 @@
       "nota": 6.9,
       "criacao": "2025-04-28T14:47:00.212377Z",
       "atualizacao": "2025-04-30T14:36:30.458743Z",
-      "ativo": true
-    },
-    {
-      "id": "11",
-      "nome": "Renner",
-      "banner": null,
-      "logo": null,
-      "descricao": "Moda feminina e masculina acessível",
-      "produtos": [
-        31,
-        32,
-        33
-      ],
-      "categoria": 1,
-      "localizacao": "Rua José do Patrocínio, 430",
-      "lojista": 11,
-      "foto_da_loja": null,
-      "redes_sociais": "@renner @rennerbrasil",
-      "horario_funcionamento": "09:00-18:00",
-      "avaliacoes": [],
-      "nota": 7.4,
-      "criacao": "2025-04-28T14:47:30.212377Z",
-      "atualizacao": "2025-04-30T14:37:00.458743Z",
-      "ativo": true
-    },
-    {
-      "id": "12",
-      "nome": "Salinas",
-      "banner": null,
-      "logo": null,
-      "descricao": "Moda praiana e casual",
-      "produtos": [
-        34,
-        35,
-        36
-      ],
-      "categoria": 1,
-      "localizacao": "Av. das Américas, 330",
-      "lojista": 12,
-      "foto_da_loja": null,
-      "redes_sociais": "@salinas @salinasbrasil",
-      "horario_funcionamento": "12:00-18:00",
-      "avaliacoes": [],
-      "nota": 7.9,
-      "criacao": "2025-04-28T14:48:00.212377Z",
-      "atualizacao": "2025-04-30T14:37:30.458743Z",
-      "ativo": true
-    },
-    {
-      "id": "13",
-      "nome": "O Boticário",
-      "banner": null,
-      "logo": null,
-      "descricao": "Cosméticos e perfumaria",
-      "produtos": [
-        37,
-        38,
-        39
-      ],
-      "categoria": 3,
-      "localizacao": "Rua da Paz, 75",
-      "lojista": 13,
-      "foto_da_loja": null,
-      "redes_sociais": "@oboticario @oboticariobrasil",
-      "horario_funcionamento": "10:00-18:00",
-      "avaliacoes": [],
-      "nota": 6.8,
-      "criacao": "2025-04-28T14:48:30.212377Z",
-      "atualizacao": "2025-04-30T14:38:00.458743Z",
-      "ativo": true
-    },
-    {
-      "id": "14",
-      "nome": "L'Occitane",
-      "banner": null,
-      "logo": null,
-      "descricao": "Produtos de cuidados com a pele e corpo",
-      "produtos": [
-        40,
-        41,
-        42
-      ],
-      "categoria": 3,
-      "localizacao": "Rua do Carmo, 56",
-      "lojista": 14,
-      "foto_da_loja": null,
-      "redes_sociais": "@loccitane @loccitane_brasil",
-      "horario_funcionamento": "11:00-19:00",
-      "avaliacoes": [],
-      "nota": 8.2,
-      "criacao": "2025-04-28T14:49:00.212377Z",
-      "atualizacao": "2025-04-30T14:38:30.458743Z",
-      "ativo": true
-    },
-    {
-      "id": "15",
-      "nome": "Avon",
-      "banner": null,
-      "logo": null,
-      "descricao": "Produtos de beleza e cuidados pessoais",
-      "produtos": [
-        43,
-        44,
-        45
-      ],
-      "categoria": 3,
-      "localizacao": "Rua do Sol, 85",
-      "lojista": 15,
-      "foto_da_loja": null,
-      "redes_sociais": "@avon @avonbrasil",
-      "horario_funcionamento": "10:00-17:00",
-      "avaliacoes": [],
-      "nota": 6.7,
-      "criacao": "2025-04-28T14:49:30.212377Z",
-      "atualizacao": "2025-04-30T14:39:00.458743Z",
-      "ativo": true
-    },
-    {
-      "id": "16",
-      "nome": "Boticário",
-      "banner": null,
-      "logo": null,
-      "descricao": "Produtos cosméticos, perfumes e maquiagens",
-      "produtos": [
-        46,
-        47,
-        48
-      ],
-      "categoria": 3,
-      "localizacao": "Av. dos Anjos, 59",
-      "lojista": 16,
-      "foto_da_loja": null,
-      "redes_sociais": "@boticario @boticariobrasil",
-      "horario_funcionamento": "10:00-18:00",
-      "avaliacoes": [],
-      "nota": 7.5,
-      "criacao": "2025-04-28T14:50:00.212377Z",
-      "atualizacao": "2025-04-30T14:39:30.458743Z",
-      "ativo": true
-    },
-    {
-      "id": "17",
-      "nome": "Drogaria São Paulo",
-      "banner": null,
-      "logo": null,
-      "descricao": "Medicamentos e produtos de saúde",
-      "produtos": [
-        49,
-        50,
-        51
-      ],
-      "categoria": 4,
-      "localizacao": "Rua das Orquídeas, 128",
-      "lojista": 17,
-      "foto_da_loja": null,
-      "redes_sociais": "@drogariasaopaulo @drogariasaopaulobrasil",
-      "horario_funcionamento": "09:00-20:00",
-      "avaliacoes": [],
-      "nota": 6.6,
-      "criacao": "2025-04-28T14:50:30.212377Z",
-      "atualizacao": "2025-04-30T14:40:00.458743Z",
-      "ativo": true
-    },
-    {
-      "id": "18",
-      "nome": "Droga Raia",
-      "banner": null,
-      "logo": null,
-      "descricao": "Produtos farmacêuticos e de bem-estar",
-      "produtos": [
-        52,
-        53,
-        54
-      ],
-      "categoria": 4,
-      "localizacao": "Rua da Alegria, 64",
-      "lojista": 18,
-      "foto_da_loja": null,
-      "redes_sociais": "@drogaraia @drogaraia_br",
-      "horario_funcionamento": "10:00-19:00",
-      "avaliacoes": [],
-      "nota": 7,
-      "criacao": "2025-04-28T14:51:00.212377Z",
-      "atualizacao": "2025-04-30T14:40:30.458743Z",
-      "ativo": true
-    },
-    {
-      "id": "19",
-      "nome": "Farmácia Pague Menos",
-      "banner": null,
-      "logo": null,
-      "descricao": "Produtos para a saúde e beleza",
-      "produtos": [
-        55,
-        56,
-        57
-      ],
-      "categoria": 4,
-      "localizacao": "Rua da Estação, 21",
-      "lojista": 19,
-      "foto_da_loja": null,
-      "redes_sociais": "@paguemenos @paguemenosbr",
-      "horario_funcionamento": "08:00-18:00",
-      "avaliacoes": [],
-      "nota": 6.3,
-      "criacao": "2025-04-28T14:51:30.212377Z",
-      "atualizacao": "2025-04-30T14:41:00.458743Z",
-      "ativo": true
-    },
-    {
-      "id": "20",
-      "nome": "Panvel",
-      "banner": null,
-      "logo": null,
-      "descricao": "Produtos farmacêuticos e cosméticos",
-      "produtos": [
-        58,
-        59,
-        60
-      ],
-      "categoria": 4,
-      "localizacao": "Rua da Liberdade, 101",
-      "lojista": 20,
-      "foto_da_loja": null,
-      "redes_sociais": "@panvel @panvelbrasil",
-      "horario_funcionamento": "10:00-19:00",
-      "avaliacoes": [],
-      "nota": 7.1,
-      "criacao": "2025-04-28T14:52:00.212377Z",
-      "atualizacao": "2025-04-30T14:41:30.458743Z",
-      "ativo": true
+      "ativo": true,
+      "cor": "roxo"
     }
   ],
   "totens-pessoais": [
     {
-      "id": "201975",
+      "id": "150642",
       "tipo_usuario": "Local",
       "faixaEtaria": "0-12",
       "genero": "Masculino",
-      "criacao": "2025-05-02T17:50:24.042Z",
-      "atualizacao": "2025-05-02T17:50:24.042Z",
+      "criacao": "2025-05-08T20:49:47.144Z",
+      "atualizacao": "2025-05-08T20:49:47.144Z",
       "ativo": true
     },
     {
-      "id": "513438",
+      "id": "450741",
       "tipo_usuario": "Local",
       "faixaEtaria": "13-17",
-      "genero": "Masculino",
-      "criacao": "2025-05-02T18:10:21.266Z",
-      "atualizacao": "2025-05-02T18:10:21.266Z",
+      "genero": "Feminino",
+      "criacao": "2025-05-08T21:39:59.829Z",
+      "atualizacao": "2025-05-08T21:39:59.829Z",
       "ativo": true
     },
     {
-      "id": "307368",
+      "id": "575394",
       "tipo_usuario": "Local",
       "faixaEtaria": "0-12",
       "genero": "Masculino",
-      "criacao": "2025-05-02T18:31:12.024Z",
-      "atualizacao": "2025-05-02T18:31:12.024Z",
+      "criacao": "2025-05-09T20:27:04.219Z",
+      "atualizacao": "2025-05-09T20:27:04.219Z",
       "ativo": true
     },
     {
-      "id": "710250",
+      "id": "144062",
       "tipo_usuario": "Local",
       "faixaEtaria": "0-12",
       "genero": "Masculino",
-      "criacao": "2025-05-02T18:45:24.575Z",
-      "atualizacao": "2025-05-02T18:45:24.575Z",
+      "criacao": "2025-05-09T20:48:41.001Z",
+      "atualizacao": "2025-05-09T20:48:41.001Z",
       "ativo": true
     },
     {
-      "id": "658538",
+      "id": "30707",
+      "tipo_usuario": "Turista",
+      "faixaEtaria": "25-34",
+      "genero": "Feminino",
+      "criacao": "2025-05-09T21:02:26.185Z",
+      "atualizacao": "2025-05-09T21:02:26.185Z",
+      "ativo": true
+    },
+    {
+      "id": "115608",
       "tipo_usuario": "Local",
       "faixaEtaria": "0-12",
       "genero": "Masculino",
-      "criacao": "2025-05-02T18:48:26.543Z",
-      "atualizacao": "2025-05-02T18:48:26.543Z",
+      "criacao": "2025-05-09T21:18:20.184Z",
+      "atualizacao": "2025-05-09T21:18:20.184Z",
       "ativo": true
     },
     {
-      "id": "259955",
+      "id": "594455",
+      "tipo_usuario": "Local",
+      "faixaEtaria": "0-12",
+      "genero": "Masculino",
+      "criacao": "2025-05-09T21:18:56.839Z",
+      "atualizacao": "2025-05-09T21:18:56.839Z",
+      "ativo": true
+    },
+    {
+      "id": "816225",
       "tipo_usuario": "Turista",
       "faixaEtaria": "13-17",
       "genero": "Feminino",
-      "criacao": "2025-05-02T19:03:47.150Z",
-      "atualizacao": "2025-05-02T19:03:47.150Z",
+      "criacao": "2025-05-09T21:22:02.119Z",
+      "atualizacao": "2025-05-09T21:22:02.119Z",
       "ativo": true
     },
     {
-      "id": "78553",
+      "id": "819769",
       "tipo_usuario": "Local",
       "faixaEtaria": "0-12",
       "genero": "Masculino",
-      "criacao": "2025-05-02T19:06:55.949Z",
-      "atualizacao": "2025-05-02T19:06:55.949Z",
+      "criacao": "2025-05-09T21:51:05.477Z",
+      "atualizacao": "2025-05-09T21:51:05.477Z",
       "ativo": true
     },
     {
-      "id": "681770",
-      "tipo_usuario": "Local",
+      "id": "106786",
+      "tipo_usuario": "Turistas",
       "faixaEtaria": "0-12",
-      "genero": "Masculino",
-      "criacao": "2025-05-02T19:11:43.701Z",
-      "atualizacao": "2025-05-02T19:11:43.701Z",
+      "genero": "Feminino",
+      "criacao": "2025-05-09T22:09:26.380Z",
+      "atualizacao": "2025-05-09T22:09:26.380Z",
       "ativo": true
     },
     {
-      "id": "144500",
+      "id": "71224",
+      "tipo_usuario": "Local",
+      "faixaEtaria": "18-24",
+      "genero": "Feminino",
+      "criacao": "2025-05-09T22:14:57.579Z",
+      "atualizacao": "2025-05-09T22:14:57.579Z",
+      "ativo": true
+    },
+    {
+      "id": "365796",
       "tipo_usuario": "Local",
       "faixaEtaria": "0-12",
       "genero": "Masculino",
-      "criacao": "2025-05-02T19:16:13.861Z",
-      "atualizacao": "2025-05-02T19:16:13.861Z",
+      "criacao": "2025-05-09T22:17:36.051Z",
+      "atualizacao": "2025-05-09T22:17:36.051Z",
+      "ativo": true
+    },
+    {
+      "id": "733191",
+      "tipo_usuario": "Local",
+      "faixaEtaria": "18-24",
+      "genero": "Feminino",
+      "criacao": "2025-05-09T22:18:44.035Z",
+      "atualizacao": "2025-05-09T22:18:44.035Z",
+      "ativo": true
+    },
+    {
+      "id": "999980",
+      "tipo_usuario": "Local",
+      "faixaEtaria": "0-12",
+      "genero": "Masculino",
+      "criacao": "2025-05-09T22:28:45.835Z",
+      "atualizacao": "2025-05-09T22:28:45.835Z",
       "ativo": true
     }
   ]

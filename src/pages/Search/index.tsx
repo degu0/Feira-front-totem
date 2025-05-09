@@ -1,43 +1,57 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { useUserTracking } from "../../hooks/useUserTracking";
-
-type Categoria = {
-  id: string;
-  nome: string;
-};
 
 type Loja = {
   id: string;
   nome: string;
+  localizacao: string;
+  cor: string;
 };
 
 export function Search() {
   const navigate = useNavigate();
   const [query, setQuery] = useState<string>("");
-
-  const [category, setCategory] = useState<Categoria[]>([]);
-  const [selectedCategory, setSelectedCategory] = useState<string>("");
+  const { categoryId } = useParams();
   const [stores, setStores] = useState<Loja[]>([]);
   const [filteredStores, setFilteredStores] = useState<Loja[]>([]);
 
-  useEffect(() => {
-    fetch("http://localhost:3000/categoria")
-      .then((res) => res.json())
-      .then((data) => setCategory(data));
-  }, []);
-
-  const handleCategoryClick = (categoryId: string) => {
-    setSelectedCategory(categoryId);
-    setQuery("")
-
-    fetch(`http://localhost:3000/lojas?categoria=${categoryId}`)
-      .then((res) => res.json())
-      .then((data) => {
-        setStores(data);
-        setFilteredStores(data);
-      });
+  const corMap: Record<string, string> = {
+    vermelho: "bg-red-500",
+    azul: "bg-blue-500",
+    amarelo: "bg-yellow-500",
+    rosa: "bg-pink-500",
+    roxo: "bg-purple-500",
   };
+
+  useEffect(() => {
+    async function loadData() {
+      try {
+        const response = await fetch(
+          `http://localhost:3000/lojas?categoria=${categoryId}`
+        );
+        const data: Loja[] = await response.json();
+        console.log(data);
+        
+
+        if (response.ok) {
+          if (Array.isArray(data)) {
+            const sortedData = data.sort((a, b) => a.nome.localeCompare(b.nome));
+            setStores(sortedData);
+            setFilteredStores(sortedData);
+          } else {
+            console.error("Resposta inválida da API:", data);
+          }
+        } else {
+          console.error("Erro no fetch de dados da categoria:", data);
+        }
+      } catch (error) {
+        console.error("Erro ao buscar categorias:", error);
+      }
+    }
+
+    loadData();
+  }, [categoryId]);
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const value = event.target.value;
@@ -56,64 +70,74 @@ export function Search() {
   useUserTracking();
 
   return (
-    <div className="w-full min-h-screen flex flex-col items-center overflow-hidden">
+    <div className="w-full min-h-screen flex flex-col">
       <div
-        className="w-full h-[300px]"
+        className="w-full h-[40vh]"
         style={{
           backgroundImage: "url('/map-caruaru.webp')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        <div className="w-full max-w-xl">
-          <h3 className="text-xl font-semibold mb-2">Categorias:</h3>
-          <ul className="grid grid-cols-2 gap-2">
-            {category.map((c) => (
-              <li
-                key={c.id}
-                className="cursor-pointer p-2 border rounded hover:bg-gray-100"
-                onClick={() => handleCategoryClick(c.id)}
-              >
-                {c.nome}
-              </li>
-            ))}
-          </ul>
-        </div>
       </div>
 
-      <div className="bg-white w-full p-8 shadow-xl flex flex-col items-center gap-8">
-        <div className="w-full flex justify-center items-center">
+      <div
+        className="bg-gray-200 w-full flex-grow p-8 shadow-xl flex flex-col items-center gap-8"
+        style={{ height: "60vh" }}
+      >
+        <div className="w-full max-w-4xl">
           <input
             type="text"
             placeholder="Pesquise o nome da loja"
             value={query}
             onChange={handleInputChange}
-            className="border-2 border-black rounded text-black w-1/2 p-1.5"
+            className="border-2 border-none rounded text-black w-full p-3 bg-white shadow"
           />
         </div>
 
-        {selectedCategory ? (
-          <div className="w-full max-w-xl mt-6">
-            <h3 className="text-xl font-semibold mb-2">
-              Lojas da categoria selecionada:
-            </h3>
-            <ul className="list-disc list-inside">
-              {filteredStores.length > 0 ? (
-                filteredStores.map((store) => (
-                  <li key={store.id}>{store.nome}</li>
-                ))
-              ) : (
-                <li className="text-gray-500">Nenhuma loja encontrada</li>
-              )}
-            </ul>
-          </div>
-        ) : (
-          <div className="w-full max-w-xl mt-6">
-            <h3 className="text-xl font-semibold mb-2">
-              Selecione uma categoria
-            </h3>
-          </div>
-        )}
+        <div className="w-full max-w-4xl bg-white rounded-xl shadow-lg flex-grow overflow-hidden">
+          <h3 className="text-2xl font-semibold my-4 text-center text-amber-700">
+            Lojas disponíveis
+          </h3>
+
+          {filteredStores.length > 0 ? (
+            <div className="h-[calc(100%-3.5rem)] overflow-y-auto">
+              {filteredStores.map((store) => (
+                <div
+                  key={store.id}
+                  className="flex items-center p-4 hover:bg-gray-50 cursor-pointer border-b border-gray-200"
+                  onClick={() => navigate(`/StoreResult/${store.id}`)}
+                >
+                  <div
+                    className={`w-4 h-4 rounded-full ${corMap[store.cor]} mr-3`}
+                  ></div>
+                  <div className="flex-grow">
+                    <p className="text-lg font-bold">{store.nome}</p>
+                    <p className="text-sm text-gray-600">{store.localizacao}</p>
+                  </div>
+                  <div className="text-gray-500">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-5 w-5"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              ))}
+            </div>
+          ) : (
+            <div className="h-full flex items-center justify-center">
+              <p className="text-gray-500">Nenhuma loja encontrada</p>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );

@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 
+type Option = { id: string; nome: string };
+
 type CustomSelectProps = {
   type: "checkbox" | "radio";
-  title: string;
-  values: string[];
+  title?: string;
+  values: Option[];
   name?: string;
-  onChange?: (selected: string[] | string) => void; 
+  onChange?: (selected: Option[] | Option) => void;
 };
 
 export const CustomSelect: React.FC<CustomSelectProps> = ({
@@ -15,15 +17,16 @@ export const CustomSelect: React.FC<CustomSelectProps> = ({
   name,
   onChange,
 }) => {
-  const [selected, setSelected] = useState<string[] | string>(
-    type === "checkbox" ? [] : ""
+  const [selected, setSelected] = useState<Option[] | Option>(
+    type === "checkbox" ? [] : { id: "", nome: "" }
   );
+  
 
-  const handleChange = (value: string) => {
+  const handleChange = (value: Option) => {
     if (type === "checkbox") {
-      const current = selected as string[];
-      const updated = current.includes(value)
-        ? current.filter((v) => v !== value)
+      const current = selected as Option[];
+      const updated = current.some((v) => v.id === value.id)
+        ? current.filter((v) => v.id !== value.id)
         : [...current, value];
       setSelected(updated);
       onChange?.(updated);
@@ -32,36 +35,45 @@ export const CustomSelect: React.FC<CustomSelectProps> = ({
       onChange?.(value);
     }
   };
+  
+
+  const getColorClass = (index: number) => {
+    return index % 2 === 0
+      ? "bg-amber-400 hover:bg-amber-500 peer-checked:bg-amber-600"
+      : "bg-amber-700 hover:bg-amber-800 peer-checked:bg-amber-900";
+  };
 
   return (
-    <div className="w-full my-1">
-      <h2 className="ml-2 mb-1 text-base font-semibold">{title}</h2>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 px-2 mt-auto">
+    <div className="w-full my-2">
+      <h2 className="ml-1 mb-2 text-sm text-center font-semibold text-gray-700">{title}</h2>
+      <div className="flex flex-wrap justify-center gap-2">
         {values.map((value, index) => {
-          const id = `option-${value}`;
+          const id = `${name}-${index}`;
           const isChecked =
             type === "checkbox"
-              ? (selected as string[]).includes(value)
-              : selected === value;
+            ? (selected as Option[]).some((v) => v.id === value.id)
+            : (selected as Option).id === value.id;
 
           return (
-            <div key={index} className="flex justify-center">
+            <div key={index} className="w-auto min-w-[140px]">
               <input
                 type={type}
                 id={id}
                 className="hidden peer"
-                value={value}
+                value={value.id}
                 name={name}
                 checked={isChecked}
                 onChange={() => handleChange(value)}
               />
               <label
                 htmlFor={id}
-                className="inline-flex items-center justify-center px-2 py-1.5 text-sm
-                text-black bg-indigo-200 rounded cursor-pointer
-                peer-checked:bg-indigo-600 peer-checked:text-white transition-colors"
+                className={`flex items-center justify-center text-center w-full 
+                py-2 px-4 text-base font-medium text-white rounded-md cursor-pointer transition-colors
+            ${getColorClass(
+              index
+            )} peer-checked:ring-2 peer-checked:ring-white peer-checked:text-white`}
               >
-                {value}
+                {value.nome}
               </label>
             </div>
           );
