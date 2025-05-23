@@ -10,7 +10,7 @@ export function TouchScreen() {
       <div
         className="w-full h-screen"
         style={{
-          backgroundImage: "url('/map-caruaru.webp')",
+          backgroundImage: "url('/map-caruaru.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

@@ -930,6 +930,105 @@
       "criacao": "2025-05-09T22:28:45.835Z",
       "atualizacao": "2025-05-09T22:28:45.835Z",
       "ativo": true
+    },
+    {
+      "id": "517092",
+      "tipo_usuario": "Local",
+      "faixaEtaria": "35-44",
+      "genero": "Masculino",
+      "criacao": "2025-05-22T22:08:44.932Z",
+      "atualizacao": "2025-05-22T22:08:44.932Z",
+      "ativo": true
+    },
+    {
+      "id": "910971",
+      "tipo_usuario": "Turistas",
+      "faixaEtaria": "13-17",
+      "genero": "Feminino",
+      "criacao": "2025-05-22T22:16:52.028Z",
+      "atualizacao": "2025-05-22T22:16:52.028Z",
+      "ativo": true
+    },
+    {
+      "id": "597231",
+      "tipo_usuario": "Local",
+      "faixaEtaria": "18-24",
+      "genero": "Feminino",
+      "criacao": "2025-05-22T22:19:01.643Z",
+      "atualizacao": "2025-05-22T22:19:01.643Z",
+      "ativo": true
+    },
+    {
+      "id": "283443",
+      "tipo_usuario": "Local",
+      "faixaEtaria": "0-12",
+      "genero": "Masculino",
+      "criacao": "2025-05-22T23:07:27.235Z",
+      "atualizacao": "2025-05-22T23:07:27.235Z",
+      "ativo": true
+    },
+    {
+      "id": "175740",
+      "tipo_usuario": "Local",
+      "faixaEtaria": "0-12",
+      "genero": "Masculino",
+      "criacao": "2025-05-22T23:35:46.114Z",
+      "atualizacao": "2025-05-22T23:35:46.114Z",
+      "ativo": true
+    },
+    {
+      "id": "764180",
+      "tipo_usuario": "Turistas",
+      "faixaEtaria": "18-24",
+      "genero": "Feminino",
+      "criacao": "2025-05-22T23:37:59.818Z",
+      "atualizacao": "2025-05-22T23:37:59.818Z",
+      "ativo": true
+    },
+    {
+      "id": "186383",
+      "tipo_usuario": "Turistas",
+      "faixaEtaria": "13-17",
+      "genero": "Feminino",
+      "criacao": "2025-05-22T23:42:35.746Z",
+      "atualizacao": "2025-05-22T23:42:35.746Z",
+      "ativo": true
+    },
+    {
+      "id": "942068",
+      "tipo_usuario": "Local",
+      "faixaEtaria": "13-17",
+      "genero": "Feminino",
+      "criacao": "2025-05-22T23:43:33.060Z",
+      "atualizacao": "2025-05-22T23:43:33.060Z",
+      "ativo": true
+    },
+    {
+      "id": "88793",
+      "tipo_usuario": "Local",
+      "faixaEtaria": "18-24",
+      "genero": "Masculino",
+      "criacao": "2025-05-22T23:53:48.378Z",
+      "atualizacao": "2025-05-22T23:53:48.378Z",
+      "ativo": true
+    },
+    {
+      "id": "457144",
+      "tipo_usuario": "Local",
+      "faixaEtaria": "18-24",
+      "genero": "Masculino",
+      "criacao": "2025-05-22T23:55:04.149Z",
+      "atualizacao": "2025-05-22T23:55:04.149Z",
+      "ativo": true
+    },
+    {
+      "id": "202802",
+      "tipo_usuario": "Local",
+      "faixaEtaria": "0-12",
+      "genero": "Masculino",
+      "criacao": "2025-05-22T23:55:49.047Z",
+      "atualizacao": "2025-05-22T23:55:49.047Z",
+      "ativo": true
     }
   ]
 }

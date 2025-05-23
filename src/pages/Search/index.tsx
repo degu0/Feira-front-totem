@@ -74,7 +74,7 @@ export function Search() {
       <div
         className="w-full h-[40vh]"
         style={{
-          backgroundImage: "url('/map-caruaru.webp')",
+          backgroundImage: "url('/map-caruaru.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

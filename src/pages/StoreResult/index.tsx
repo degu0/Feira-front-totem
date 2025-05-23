@@ -47,7 +47,7 @@ export function StoreResult() {
       <div
         className="w-full h-[500px] relative"
         style={{
-          backgroundImage: "url('/map-caruaru.webp')",
+          backgroundImage: "url('/map-caruaru.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

@@ -57,7 +57,7 @@ export function useUserTracking() {
   }, [reset, start]);
 
   useEffect(() => {
-    if (time >= 45) {
+    if (time >= 10) {
       navigate("/");
     }
   }, [time, navigate]);
